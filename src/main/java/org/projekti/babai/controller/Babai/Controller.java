@@ -61,10 +61,7 @@ public class Controller {
         return "You sent: " + message;
     }
 
-    @GetMapping("/error")
-    public String error() {
-        return "Wow an error!";
-    }
+   
 
     // DELETE endpoint: remove max element from the list
     @DeleteMapping("/deleteMax")
