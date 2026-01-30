@@ -61,7 +61,7 @@ public class Controller {
         return "You sent: " + message;
     }
 
-   
+
 
     // DELETE endpoint: remove max element from the list
     @DeleteMapping("/deleteMax")
