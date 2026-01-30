@@ -56,10 +56,16 @@ public class Controller {
     }
 
     // Example 2: POST endpoint
-    @PostMapping("/echo")
-    public String echo(@RequestBody String message) {
-        return "You sent: " + message;
+    @GetMapping("/echo")
+    public String echo(@RequestParam String msg) {
+            return "You sent: " + msg;
     }
+
+    @GetMapping("/echo/{msg:.+}")
+    public String echo2(@PathVariable String msg) {
+        return "You sent: " + msg;
+    }
+
 
     @GetMapping("/error")
     public String error() {
@@ -87,3 +93,5 @@ public class Controller {
         return "Wow a test!";
     }
 }
+
+//janaqi eshte djale i mire
