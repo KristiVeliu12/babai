@@ -88,4 +88,4 @@ public class Controller {
     }
 }
 
-//janaqi eshte djale  i mire
+//janaqi eshte djale i mire
