@@ -81,4 +81,9 @@ public class Controller {
         Controller.list.remove((Integer) max); // remove first occurrence of max
         return new ArrayList<>(Controller.list); // return a copy
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Wow a test!";
+    }
 }
